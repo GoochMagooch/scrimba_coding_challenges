@@ -1,22 +1,74 @@
 body {
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+    height: 375px;
+    width: 525px;
+    border-radius: 4px;
+    background-color: rgb(22, 22, 124);
 }
 
-.home {
+h3 {
+    color: #EEEEEE;
+}
+
+.score-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    justify-content: space-around;
 }
 
-.guest {
+#home-score {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 2px solid black;
+    border-radius: 5px;
+    color: #EEEEEE;
+    height: 100px;
+    width: 100px;
+    background-color: black;
 }
+
+#new-game {
+    height: 50px;
+}
+
+#guest-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #EEEEEE;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+button {
+    height: 28px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
+
+.buttons {
+    margin-top: 23px;
+}
+
+/* point button border #9AABD8 */
+/* point color #F94F6D*/
+/* HOME/GUEST color #EEEEEE */
+/* point background color #080001 */
