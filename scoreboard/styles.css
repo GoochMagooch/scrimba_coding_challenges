@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
+    background-image: url('michael.jpg');
 }
 
 .container {
@@ -100,7 +101,7 @@ button {
     height: 300px;
 }
 
-.timer-quarter-container {
+.timer-period-container {
     display: flex;
 }
 
@@ -113,7 +114,7 @@ button {
     font-size: 15px;
 }
 
-.quarter-class {
+.period-class {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +149,7 @@ button {
     height: 42px;
 }
 
-#quarter {
+#period {
     display: flex;
     justify-content: center;
     align-items: center;
