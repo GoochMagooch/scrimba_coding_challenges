@@ -9,18 +9,21 @@
         <div class="container">
             <div class="score-container">
                 <h3>HOME</h3>
-                <div id="home-score">12</div>
+                <div id="home-score">0</div>
                 <div class="buttons">
-                    <button id="home-one" onclick="onePoint()">+1</button>
+                    <button id="home-one" onclick="onePointHome()">+1</button>
                     <button id="home-two" onclick="twoPoint()">+2</button>
                     <button id="home-three" onclick="threePoint()">+3</button>
                 </div>
             </div>
+
+            <button id="new-game" onclick="newGame()">New Game</button>
+
             <div class="score-container">
                 <h3>GUEST</h3>
-                <div id="guest-score">5</div>
+                <div id="guest-score">0</div>
                 <div class="buttons">
-                    <button id="guest-one" onclick="onePoint()">+1</button>
+                    <button id="guest-one" onclick="onePointGuest()">+1</button>
                     <button id="guest-two" onclick="twoPoint()">+2</button>
                     <button id="guest-three" onclick="threePoint()">+3</button>
                 </div>
