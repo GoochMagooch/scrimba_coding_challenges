@@ -143,6 +143,11 @@ button {
     width: 72px;
 }
 
+#pause-timer {
+    width: 63px;
+    height: 42px;
+}
+
 #quarter {
     display: flex;
     justify-content: center;
@@ -151,7 +156,7 @@ button {
     font-size: 18px;
     border: 2px solid #9AABD8;
     border-radius: 5px;
-    height: 39px;
+    height: 40px;
     width: 60px;
     font-family: 'Cursed Timer ULiL', sans-serif;
     background-color: black;
