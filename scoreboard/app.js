@@ -33,7 +33,7 @@ function timer() {
 }
 
 // Highlights Higher Score in Green
-function higherScore() {
+function leader() {
     if (homeCount > guestCount) {
         homeScore.style.color = '#00FF00'
         guestScore.style.color = '#F94F6D'
@@ -49,29 +49,29 @@ function higherScore() {
 // Home Point Increment Functions
 function onePointHome() {
     homeScore.textContent = homeCount += 1
-    higherScore()
+    leader()
 }
 function twoPointHome() {
     homeScore.textContent = homeCount += 2
-    higherScore()
+    leader()
 }
 function threePointHome() {
     homeScore.textContent = homeCount += 3
-    higherScore()
+    leader()
 }
 
 // Guest Point Increment Functions
 function onePointGuest() {
     guestScore.textContent = guestCount += 1
-    higherScore()
+    leader()
 }
 function twoPointGuest() {
     guestScore.textContent = guestCount += 2
-    higherScore()
+    leader()
 }
 function threePointGuest() {
     guestScore.textContent = guestCount += 3
-    higherScore()
+    leader()
 }
 
 // Resets Both Scores
