@@ -15,6 +15,23 @@ let guestTwoPoint = document.getElementById('guest-two')
 let guestThreePoint = document.getElementById('guest-three')
 let guestCount = 0
 
+// Timer Variables and Function
+let time = document.getElementById('timer')
+let minutes = document.getElementById('minute')
+let seconds = document.getElementById('second')
+let secondsVariable = 59
+let secondVariable = seconds.innerHTML
+
+let startTimer = document.getElementById('start-timer')
+
+function timer() {
+    secondVariable--;
+    while (secondVariable > 0) {
+        seconds.innerHTML = secondsVariable
+        seconds.textContent = secondVariable
+    }
+}
+
 // Highlights Higher Score in Green
 function higherScore() {
     if (homeCount > guestCount) {
