@@ -16,7 +16,20 @@
                 </div>
             </div>
 
-            <button id="new-game" onclick="newGame()">New Game</button>
+            <div class="middle-container">
+                <div class="timer-quarter-container">
+                    <div class="timer-class">
+                        <span>timer</span>
+                        <div id="timer"><span id="minute">2</span>:<span id="second">00</span></div>
+                        <button id="start-timer" onclick="timer()">START</button>
+                    </div>
+                    <div class="quarter-class">
+                        <span>quarter</span>
+                        <div id="quarter">0</div>
+                    </div>
+                </div>
+                <button id="new-game" onclick="newGame()">New Game</button>
+            </div>
 
             <div class="score-container">
                 <h3>GUEST</h3>
