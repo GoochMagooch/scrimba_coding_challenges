@@ -20,6 +20,8 @@ body {
 
 h3 {
     color: #EEEEEE;
+    font-size: 38px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .score-container {
@@ -27,6 +29,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-top: 0;
 }
 
 #home-score {
@@ -39,10 +42,15 @@ h3 {
     height: 100px;
     width: 100px;
     background-color: black;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 72px;
+    color: #F94F6D;
 }
 
 #new-game {
     height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 
 #guest-score {
@@ -55,6 +63,9 @@ h3 {
     height: 100px;
     width: 100px;
     background-color: black;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 72px;
+    color: #F94F6D;
 }
 
 button {
@@ -62,13 +73,13 @@ button {
     border-radius: 5px;
     border: 2px solid #9AABD8;
     color: #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
 }
 
 .buttons {
     margin-top: 23px;
 }
 
-/* point button border #9AABD8 */
-/* point color #F94F6D*/
+/* point color */
 /* HOME/GUEST color #EEEEEE */
 /* point background color #080001 */
