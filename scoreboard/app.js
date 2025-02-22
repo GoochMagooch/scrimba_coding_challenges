@@ -15,11 +15,9 @@ let guestCount = 0
 function onePointHome() {
     homeScore.textContent = homeCount += 1
 }
-
 function twoPointHome() {
     homeScore.textContent = homeCount += 2
 }
-
 function threePointHome() {
     homeScore.textContent = homeCount += 3
 }
@@ -28,11 +26,9 @@ function threePointHome() {
 function onePointGuest() {
     guestScore.textContent = guestCount += 1
 }
-
 function twoPointGuest() {
     guestScore.textContent = guestCount += 2
 }
-
 function threePointGuest() {
     guestScore.textContent = guestCount += 3
 }
