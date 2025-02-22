@@ -15,13 +15,15 @@ body {
     height: 375px;
     width: 525px;
     border-radius: 4px;
-    background-color: rgb(22, 22, 124);
+    background-color: rgb(49, 49, 93);
 }
 
 h3 {
     color: #EEEEEE;
     font-size: 38px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 57px;
+    margin-bottom: 0px;
 }
 
 .score-container {
@@ -34,13 +36,15 @@ h3 {
 
 #home-score {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    padding-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     border: 2px solid black;
     border-radius: 5px;
-    color: #EEEEEE;
-    height: 100px;
-    width: 100px;
+    height: 118px;
+    width: 120px;
     background-color: black;
     font-family: 'Cursed Timer ULiL', sans-serif;
     font-size: 72px;
@@ -55,13 +59,15 @@ h3 {
 
 #guest-score {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    padding-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     border: 2px solid black;
     border-radius: 5px;
-    color: #EEEEEE;
-    height: 100px;
-    width: 100px;
+    height: 118px;
+    width: 120px;
     background-color: black;
     font-family: 'Cursed Timer ULiL', sans-serif;
     font-size: 72px;
@@ -69,15 +75,26 @@ h3 {
 }
 
 button {
-    height: 28px;
+    height: 42px;
+    width: 42px;
     border-radius: 5px;
     border: 2px solid #9AABD8;
+    background-color: rgb(49, 49, 93);
     color: #9AABD8;
     font-family: 'Cursed Timer ULiL', sans-serif;
 }
 
 .buttons {
-    margin-top: 23px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    margin-bottom: 65px;
+    width: 150px;
+}
+
+#new-game {
+    width: 100px;
+    color: #9AABD8;
 }
 
 /* point color */
