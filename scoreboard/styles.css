@@ -149,6 +149,11 @@ button {
     height: 42px;
 }
 
+#reset-timer {
+    width: 100px;
+    height: 42px;
+}
+
 #period {
     display: flex;
     justify-content: center;
