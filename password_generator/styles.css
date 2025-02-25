@@ -1,3 +1,25 @@
 body {
     background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
 }
+
+.container {
+    background-color : #273549;
+    height: 500px;
+    width: 469px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+
+/*
+
+h1 color - #10B981
+password color - #4ADF86
+generate button color - #55F991
+password bg color - #2F3E53
+
+*/
