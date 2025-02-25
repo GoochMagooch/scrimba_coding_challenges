@@ -35,25 +35,28 @@ let secondZero = 0
 let seconds = document.getElementById('second')
 let secondsVal = seconds.innerText
 let secondsVar = 59
-
+let timeUp = false
 
 // Starts Timer and Increments Period
 function start() {
-    for (let i = 0; i < 2; i++) {
-        while (secondsVar >= 0) {
-            seconds.textContent = secondsVar
-            if (secondsVar < 10 || secondsVar > 0) {
-                seconds.textContent = `${secondZero}` + `${secondsVar}`
+    if (timeUp === false) {
+        for (let i = 0; i < 2; i++) {
+            while (secondsVar >= 0) {
+                seconds.textContent = secondsVar
+                if (secondsVar < 10 || secondsVar > 0) {
+                    seconds.textContent = `${secondZero}` + `${secondsVar}`
+                }
+                secondsVar--
             }
-            secondsVar--
-        }
-        minutesVar -= 1
-        minutes.textContent = minutesVar
-        if (periodCount < 2) {
-            periodCount += 1
-            period.textContent = periodCount
+            minutesVar -= 1
+            minutes.textContent = minutesVar
+            if (periodCount < 2) {
+                periodCount += 1
+                period.textContent = periodCount
+            }
         }
     }
+    timeUp = true
 }
 
 // Highlights Higher Score in Green
@@ -100,6 +103,7 @@ function threePointGuest() {
 
 // Resets timer
 function resetTimer() {
+    timeUp = false
     minutes.textContent = minutesVal
     seconds.textContent = secondsVal
 }
