@@ -54,14 +54,12 @@ button {
     font-size: 15px;
     height: 35px;
     width: 155px;
-    margin-top: 35px;
-    margin-bottom: 23px;
+    margin: 35px 0 23px 0;
     padding-bottom: 4px;
 }
 
 hr {
-    margin-left: 3px;
-    margin-right: 3px;
+    margin: 3px;
     border: solid 1px #2F3E53;
 }
 
@@ -71,16 +69,14 @@ hr {
 }
 
 .output p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    width: 50px;
-    height: 50px;
     margin-top: 23px;
     background-color: #273549;
     height: 35px;
     width: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #4ADF86;
     font-size: 17px;
 }
