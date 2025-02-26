@@ -1,4 +1,4 @@
-const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
+const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
     "M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b",
     "c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r",
     "s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", 
@@ -7,3 +7,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
 
 let pwOne = document.getElementById('pw-one')
 let pwTwo = document.getElementById('pw-two')
+
+function pwGenerate() {
+    newPwOne = ''
+    newPwTwo = ''
+    for (let i = 0; i < 15; i++) {
+        randChar = characters[Math.floor(Math.random() * characters.length)]
+        newPwOne += randChar
+        randChar = characters[Math.floor(Math.random() * characters.length)]
+        newPwTwo += randChar
+    }
+    pwOne.textContent = newPwOne
+    pwTwo.textContent = newPwTwo
+}
