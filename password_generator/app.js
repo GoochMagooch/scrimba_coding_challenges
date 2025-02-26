@@ -7,16 +7,38 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
 
 let pwOne = document.getElementById('pw-one')
 let pwTwo = document.getElementById('pw-two')
+let numSym = document.getElementById('num-sym')
+let numSymValue = numSym.innerText
+numSym.textContent = numSymValue + ' on'
+let numSymOff = false
 
-function pwGenerate() {
-    newPwOne = ''
-    newPwTwo = ''
+function turnOffNumSym() {
+    if (numSymOff === true) {
+        numSymOff = false
+        numSym.textContent = numSymValue + ' on'
+    } else {
+        numSymOff = true
+        numSym.textContent = numSymValue + ' off'
+    }
+}
+
+function createPassword() {
+    let password = ''
     for (let i = 0; i < 15; i++) {
         randChar = characters[Math.floor(Math.random() * characters.length)]
-        newPwOne += randChar
-        randChar = characters[Math.floor(Math.random() * characters.length)]
-        newPwTwo += randChar
+        if (numSymOff === true) {
+            while (!/^[a-zA-Z]$/.test(randChar)) {
+                randChar = characters[Math.floor(Math.random() * characters.length)]
+            }
+            password += randChar
+        } else {
+            password += randChar
+        }
     }
-    pwOne.textContent = newPwOne
-    pwTwo.textContent = newPwTwo
+    return password
+}
+
+function generatePassword() {
+    pwOne.textContent = createPassword()
+    pwTwo.textContent = createPassword()
 }
