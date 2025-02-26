@@ -5,6 +5,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
     "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")",
     "_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
+let userInput = document.getElementById('input')
 let pwOne = document.getElementById('pw-one')
 let pwTwo = document.getElementById('pw-two')
 let numSym = document.getElementById('num-sym')
@@ -23,8 +24,9 @@ function turnOffNumSym() {
 }
 
 function createPassword() {
+    let input = userInput.value ? parseInt(userInput.value) : 15
     let password = ''
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < input; i++) {
         randChar = characters[Math.floor(Math.random() * characters.length)]
         if (numSymOff === true) {
             while (!/^[a-zA-Z]$/.test(randChar)) {
