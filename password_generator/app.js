@@ -44,18 +44,3 @@ function generatePassword() {
     pwOne.textContent = createPassword()
     pwTwo.textContent = createPassword()
 }
-
-function copyClipboard() {
-    if (pwOne.textContent === '' || pwTwo.textContent === '') {
-        return
-    } else {
-        document.getElementById("pw-one").addEventListener("click", function() {
-            const text = this.textContent; // Get the text from the clicked element
-            navigator.clipboard.writeText(text).then(() => {
-                alert("Copied to clipboard!"); // Optional confirmation
-            }).catch(err => {
-                console.error("Failed to copy:", err);
-            });
-        });
-    }
-}
