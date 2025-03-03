@@ -2,7 +2,8 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    background-image: url('michael.jpg');
+    background-image: url('https://www.chromethemer.com/download/hd-wallpapers/michael-jordan-3840x2160.jpg');
+    background-size: 100vw 100vh;
 }
 
 .container {
