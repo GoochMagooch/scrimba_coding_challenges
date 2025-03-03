@@ -5,15 +5,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
     "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")",
     "_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let userInput = document.getElementById('input')
-let pwOne = document.getElementById('pw-one')
-let pwTwo = document.getElementById('pw-two')
+let genBtn = document.getElementById('gen-pw')
 let numSym = document.getElementById('num-sym')
 let numSymValue = numSym.innerText
 numSym.textContent = numSymValue + ' on'
 let numSymOff = false
-
-function turnOffNumSym() {
+let userInput = document.getElementById('input')
+let pwOne = document.getElementById('pw-one')
+let pwTwo = document.getElementById('pw-two')
+    
+numSym.addEventListener('click', function() {
     if (numSymOff === true) {
         numSymOff = false
         numSym.textContent = numSymValue + ' on'
@@ -21,8 +22,8 @@ function turnOffNumSym() {
         numSymOff = true
         numSym.textContent = numSymValue + ' off'
     }
-}
-
+})
+    
 function createPassword() {
     let input = userInput.value ? parseInt(userInput.value) : 15
     let password = ''
@@ -39,8 +40,8 @@ function createPassword() {
     }
     return password
 }
-
-function generatePassword() {
+    
+genBtn.addEventListener('click', function() {
     pwOne.textContent = createPassword()
     pwTwo.textContent = createPassword()
-}
+})
