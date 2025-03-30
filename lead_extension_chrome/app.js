@@ -21,3 +21,17 @@ ulEl.innerHTML = storageArrayItems
 }
 
 renderLeads()
+
+// Renders all leads stored in local storage upon document load
+function renderOldLeads() {
+    let oldLeads = localStorage.getItem("myLeadsStorage")
+    let oldLeadsArray = oldLeads.split(",")
+    let oldLeadsArrayItems = ""
+    for (let i = 0; i < oldLeadsArray.length; i++) {
+        oldLeadsArrayItems += `<li><a target="_blank" href="${oldLeadsArray[i]}">${oldLeadsArray[i]}</a></li>`
+    }
+
+    ulEl.innerHTML = oldLeadsArrayItems
+}
+
+renderOldLeads()
