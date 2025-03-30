@@ -19,13 +19,12 @@ function renderLeads() {
     }
 ulEl.innerHTML = storageArrayItems
 }
-
 renderLeads()
 
 // Stores old leads
 /*
 let allLeads = ''
-function oldLeads() {
+function allLeads() {
     allLeads = JSON.parse(localStorage.getItem("myLeadsStorage")) || []
     myLeads.push(storageArray)
     localStorage.setItem("myLeadsStorage", JSON.stringify(myLeads))
@@ -34,9 +33,14 @@ function oldLeads() {
 oldLeads()
 */
 
-// What I think I have to do:
-// Take current local storage (item 1)
-// Store as second local storage item (item 2)
-// Upon document reload both items will store original list of leads
-// Item 1 will be cleared, with the event listener, item 2 will be appended with new leads
-// Upon next reload, item 1 will contain previous leads, item 2 will contain all leads up to that point
+/*
+What I think I have to do:
+
+1. Take current local storage (item 1)
+2. Store as second local storage item (item 2)
+3. Upon document reload both items will store original list of leads
+4. Item 1 will clear with the event listener
+5. Item 2 will continue to be appended with leads
+6. Upon next reload, item 1 will contain previous leads, item 2 will contain all leads up to that point
+    a. this should happen within renderLeads so that allLeads is rendered, rather than just myLeads
+*/
